@@ -19,12 +19,17 @@ public class PlayerController : MonoBehaviour
 
     bool canMove = true;
 
+    public HealthBarBasic playerHealthBar;
+    public float curHealth;
+    public float maxHealth = 10;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        playerHealthBar.SetMaxHealth(maxHealth);
+        curHealth = maxHealth;
     }
 
     
@@ -58,19 +63,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-    public float health = 20;
-    public float maxHealth = 20;
 
-
-    public float Health {
-        set {
-            health = value;
-            
-        }
-        get {
-            return health;
-        }
-    }
 
     private bool TryMove(Vector2 direction) {
         if(direction != Vector2.zero) {

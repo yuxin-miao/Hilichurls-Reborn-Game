@@ -6,21 +6,20 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     Animator animator;
-    public float health = 10f;
-    public float maxHealth = 10f;
+    public float curHealth;
+    public float maxHealth;
 
-    public HealthBar healthBar;
 
     public float Health {
         set {
-            health = value;
+            curHealth = value;
 
-            if(health <= 0) {
+            if(curHealth <= 0) {
                 Defeated();
             }
         }
         get {
-            return health;
+            return curHealth;
         }
     }
 
@@ -36,7 +35,6 @@ public class Enemy : MonoBehaviour
 
     public void Start() {
         animator = GetComponent<Animator>();
-        // healthBar.SetMaxHealth(maxHealth);
     }
 
     public void Defeated(){
@@ -48,7 +46,9 @@ public class Enemy : MonoBehaviour
     }
 
     public void TakeDamage(float damage) {
-        health -= damage;
-        // healthBar.SetHealth(health);
+        curHealth -= damage;
+        if(curHealth <= 0) {
+            Defeated();
+        }
     }
 }

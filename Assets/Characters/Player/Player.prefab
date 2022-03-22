@@ -147,6 +147,9 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   swordAttack: {fileID: 8039810398081941783}
+  playerHealthBar: {fileID: 0}
+  curHealth: 0
+  maxHealth: 20
 --- !u!50 &7086259587622637418
 Rigidbody2D:
   serializedVersion: 4
