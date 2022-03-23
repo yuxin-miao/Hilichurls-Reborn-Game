@@ -12,7 +12,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - 'PathObstacle '
   - 
   - 
   - 
@@ -39,6 +39,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: GridGround
+    uniqueID: 3171266117
+    locked: 0
+  - name: GridGroundTop
+    uniqueID: 3498041951
+    locked: 0
+  - name: GridCollision
+    uniqueID: 2821860167
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
