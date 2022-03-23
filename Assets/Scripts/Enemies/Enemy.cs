@@ -9,7 +9,8 @@ public class Enemy : MonoBehaviour
     public float curHealth;
     public float maxHealth;
     Rigidbody2D enemy;
-
+    public GameObject floatingPoint; 
+    public EnemyHealthBar enemyHealthBar;
     public float Health {
         set {
             curHealth = value;
@@ -44,6 +45,7 @@ public class Enemy : MonoBehaviour
             animator.SetBool("isMoving", false);
 
         }
+
     }
 
     public void Defeated(){
@@ -55,9 +57,12 @@ public class Enemy : MonoBehaviour
     }
 
     public void TakeDamage(float damage) {
+        GameObject damagePoint = Instantiate(floatingPoint, transform.position, Quaternion.identity) as GameObject;
+        damagePoint.transform.GetChild(0).GetComponent<TextMesh>().text = "-" + damage.ToString();
         curHealth -= damage;
         if(curHealth <= 0) {
             Defeated();
         }
+        enemyHealthBar.SetHealth(curHealth);
     }
 }

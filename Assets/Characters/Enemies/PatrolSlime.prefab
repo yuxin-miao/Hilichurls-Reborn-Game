@@ -157,6 +157,8 @@ MonoBehaviour:
   animator: {fileID: 0}
   curHealth: 0
   maxHealth: 0
+  floatingPoint: {fileID: 7243215895713894075, guid: 7dbbdf953f8704e33a60afbc1c954e9b, type: 3}
+  enemyHealthBar: {fileID: 3287695844537828827, guid: 0ae3ab846e574410bb4f6fb017d5168f, type: 3}
   speed: 0.2
   patrolPoints:
   - {fileID: 0}
