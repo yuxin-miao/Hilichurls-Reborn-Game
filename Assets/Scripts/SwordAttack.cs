@@ -9,7 +9,7 @@ public class SwordAttack : MonoBehaviour
     Vector2 rightAttackOffset;
 
     private void Start() {
-        rightAttackOffset = transform.position;
+        rightAttackOffset = transform.localPosition;
     }
 
     public void AttackRight() {

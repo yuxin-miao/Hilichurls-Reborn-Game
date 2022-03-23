@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1462595199849402132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 54880335226659008}
   m_Father: {fileID: 0}
@@ -74,10 +74,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 4334783836991956000, guid: d816bb82802af43649f0bd57c535efbc, type: 3}
+  m_SortingLayerID: -1869315837
+  m_SortingLayer: 1
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 4334783836991956000, guid: d816bb82802af43649f0bd57c535efbc,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,7 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 592151bbd97a14cfabb76e293dbf6a45, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 592151bbd97a14cfabb76e293dbf6a45,
+    type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -130,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13b603865628b44b292d68e1d531a95f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 5
   collisionOffset: 0.02
   movementFilter:
     useTriggers: 0
@@ -261,7 +263,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0152296275, y: -0.015229583}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -272,7 +274,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.25}
+  m_Size: {x: 0.14954075, y: 0.15185371}
   m_EdgeRadius: 0
 --- !u!114 &8039810398081941783
 MonoBehaviour:

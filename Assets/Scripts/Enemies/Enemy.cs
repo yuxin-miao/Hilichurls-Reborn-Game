@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
@@ -58,7 +58,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damage) {
         GameObject damagePoint = Instantiate(floatingPoint, transform.position, Quaternion.identity) as GameObject;
-        damagePoint.transform.GetChild(0).GetComponent<TextMesh>().text = "-" + damage.ToString();
+        damagePoint.transform.GetChild(0).GetComponent<TextMeshPro>().text = "-" + damage.ToString();
         curHealth -= damage;
         if(curHealth <= 0) {
             Defeated();
