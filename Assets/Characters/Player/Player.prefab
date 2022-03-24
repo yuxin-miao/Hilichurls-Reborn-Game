@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7086259587622637418}
   - component: {fileID: 2117168928421945179}
   - component: {fileID: 2927107307517061053}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1462595199849402132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 54880335226659008}
   m_Father: {fileID: 0}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: -1869315837
   m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: 4334783836991956000, guid: d816bb82802af43649f0bd57c535efbc,
+  m_Sprite: {fileID: 4676523654858092208, guid: fe9ca1ae57ac7455ab24da13708e7121,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &4522945494873589680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,9 +165,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -186,18 +186,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00067968667, y: -0.16176881}
+  m_Offset: {x: -0.030951396, y: -0.022615507}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.48, y: 0.48}
+    oldSize: {x: 0.72, y: 0.6}
     newSize: {x: 0.48, y: 0.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07082012, y: 0.0069282353}
+  m_Size: {x: 0.13408229, y: 0.07437405}
   m_EdgeRadius: 0
 --- !u!95 &2927107307517061053
 Animator:
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 54880335226659008}
   - component: {fileID: 9210428962147950998}
   - component: {fileID: 8039810398081941783}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: SwordHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

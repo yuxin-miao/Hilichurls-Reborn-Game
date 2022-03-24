@@ -8,7 +8,7 @@ public class EnemyHealthBar : MonoBehaviour
     public Slider slider;
     public Color Low;
     public Color High;
-    public Vector3 Offset = new Vector3(0, 0.1f, 0); 
+    public Vector3 Offset = new Vector3(0, 0.3f, 0); 
     public void SetMaxHealth(float maxHealth) {
         slider.maxValue = maxHealth;
         slider.value = maxHealth;

@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     public float maxHealth;
     Rigidbody2D enemy;
     public GameObject floatingPoint; 
+
     public EnemyHealthBar enemyHealthBar;
     public float Health {
         set {
