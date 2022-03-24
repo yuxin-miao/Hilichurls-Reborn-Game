@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FollowEnemy : Enemy
 {
-    public float speed;
     public Transform target;
     public float minimumDistance;    
     public float beginFollow;    

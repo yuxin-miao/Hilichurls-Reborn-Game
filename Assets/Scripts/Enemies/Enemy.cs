@@ -5,6 +5,7 @@ using TMPro;
 
 public class Enemy : MonoBehaviour
 {
+    public float speed = 4f;
     public Animator animator;
     public float curHealth;
     public float maxHealth;

@@ -5,7 +5,6 @@ using UnityEngine;
 // Enemy movement that will move around several pre-defined points
 public class PatrolEnemy : Enemy
 {
-    public float speed;
     public Transform[] patrolPoints;
     public float waitTime;
     int currentPointIndex;
