@@ -94,7 +94,6 @@ public class PlayerController : MonoBehaviour
     void OnFire() {
         animator.SetTrigger("swordAttack");
     }
-
     public void SwordAttack() {
         LockMovement();
 
@@ -117,4 +116,5 @@ public class PlayerController : MonoBehaviour
     public void UnlockMovement() {
         canMove = true;
     }
+
 }

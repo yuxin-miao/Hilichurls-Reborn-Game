@@ -15,7 +15,7 @@ public class Inventory : MonoBehaviour
 
     }
     public void Add(ItemData itemData){
-        if(itemDictionary.TryGetValue(itemData, out InventoryItem item)) {
+        if (itemDictionary.TryGetValue(itemData, out InventoryItem item)) {
             item.AddToStack();
         } else {
             InventoryItem newItem = new InventoryItem(itemData);
