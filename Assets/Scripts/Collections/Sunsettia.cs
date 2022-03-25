@@ -9,8 +9,11 @@ public class Sunsettia : MonoBehaviour, ICollectible
     // define the return type and argument to match the inventory.AddItem
     public delegate void HandleSunsettiaCollected(ItemData itemData);
     public ItemData sunsettiaData;
+
+    // After press, the event will be fired 
     public void Collect() {
-        Destroy(gameObject);
+        // Destroy(gameObject);
         OnSunsettiaCollected?.Invoke(sunsettiaData);
+        Destroy(gameObject);
     }
 }
