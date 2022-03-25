@@ -60,7 +60,4 @@ public class Interactable : MonoBehaviour
         }
     }
 
-    public void DestroyItem() {
-        Destroy(gameObject);
-    }
 }

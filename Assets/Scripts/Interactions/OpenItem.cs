@@ -9,6 +9,12 @@ public class OpenItem : MonoBehaviour
         animator = GetComponent<Animator>();
     }
     public void IsOpenItem() {
-        Debug.Log("opened");
+        animator.SetTrigger("IsOpen");
+        Destroy(gameObject, 2f);
+    }
+
+    
+    public void DestroyItem() {
+        Destroy(gameObject);
     }
 }
