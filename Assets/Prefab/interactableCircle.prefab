@@ -45,7 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRange: 0
-  interactKey: 0
   interactAction:
     m_PersistentCalls:
       m_Calls: []
@@ -66,7 +65,6 @@ MonoBehaviour:
       m_Action: Input
       m_Flags: 0
     m_Flags: 0
-  isOpen: 0
 --- !u!58 &9151828277264897025
 CircleCollider2D:
   m_ObjectHideFlags: 0

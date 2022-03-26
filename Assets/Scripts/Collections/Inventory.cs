@@ -9,10 +9,17 @@ public class Inventory : MonoBehaviour
     private void OnEnable() {
         // add listeners
         Sunsettia.OnSunsettiaCollected += Add;
+        Mint.OnMintCollected += Add;
+        Apple.OnAppleCollected += Add;
+        Mushroom.OnMushroomCollected += Add;
+        SweetFlower.OnSweetFlowerCollected += Add;
     }
     private void OnDisable() {
         Sunsettia.OnSunsettiaCollected -= Add;
-
+        Mint.OnMintCollected -= Add;
+        Apple.OnAppleCollected -= Add;
+        Mushroom.OnMushroomCollected -= Add;
+        SweetFlower.OnSweetFlowerCollected -= Add;
     }
     public void Add(ItemData itemData){
         if (itemDictionary.TryGetValue(itemData, out InventoryItem item)) {

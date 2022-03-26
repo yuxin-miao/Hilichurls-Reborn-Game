@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cd3ec2921ea24d1d93afa83983ef1a2, type: 3}
-  m_Name: SunsettiaData
+  m_Name: MushroomData
   m_EditorClassIdentifier: 
-  displayName: "\u65E5\u843D\u679C"
-  icon: {fileID: -1851741895169555579, guid: 19df21c52c0af48bd8770fb6d286f95d, type: 3}
+  displayName: "\u8611\u83C7"
+  icon: {fileID: 7975656458565338215, guid: 19df21c52c0af48bd8770fb6d286f95d, type: 3}
