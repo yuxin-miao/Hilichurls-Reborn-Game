@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+    InputHandler inputHandler;
 
     bool canMove = true;
 
@@ -27,12 +28,19 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        inputHandler = GetComponent<InputHandler>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerHealthBar.SetMaxHealth(maxHealth);
         curHealth = maxHealth;
     }
 
-    
+    private void Update()
+    {
+        float delta = Time.deltaTime;
+        inputHandler.TickInput(delta);
+    }
+
+
 
     private void FixedUpdate() {
         if(canMove) {
@@ -62,6 +70,11 @@ public class PlayerController : MonoBehaviour
                 spriteRenderer.flipX = false;
             }
         }
+    }
+
+    private void LateUpdate()
+    {
+        inputHandler.inventory_Input = false;
     }
 
 
